@@ -1,0 +1,62 @@
+body {
+    background: linear-gradient(135deg, #ff4d6d, #6a5af9, #4cc9f0);
+    background-size: 300% 300%;
+    animation: animeBg 8s infinite alternate;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+@keyframes animeBg {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+
+.anime-title {
+    font-size: 3rem;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffb3c6, 0 0 35px #ffd6ff;
+}
+
+
+header, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#lamp {
+    width: 220px;
+    margin: 25px 0;
+    filter: drop-shadow(0 0 20px #ffffffaa);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#lamp:hover {
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 30px #ffffff);
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #ffffffcc;
+    color: #000;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0 0 10px #fff;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #fff;
+}
